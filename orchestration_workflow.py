@@ -66,7 +66,7 @@ def main():
     workflow.add_node("syntesizer", syntesizer)
 
     workflow.add_edge(START, "orchestrator")
-    workflow.add_conditional_edges("orchestrator", assign_workers)
+    workflow.add_conditional_edges("orchestrator", assign_workers, ["llm_call"])
     workflow.add_edge("llm_call", "syntesizer")
     workflow.add_edge("syntesizer", END)
 
