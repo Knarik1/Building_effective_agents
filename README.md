@@ -70,7 +70,7 @@ One LLM generates an output while another evaluates it, creating an iterative ge
 
 A dynamic workflow where the LLM decides which actions or tools to use and continues iterating until the task is complete.
 
-![Agents](images/agentic_workflow6.png)
+![Agents](images/agentic_workflow.png)
 
 ---
 
